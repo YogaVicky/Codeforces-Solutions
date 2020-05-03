@@ -6,9 +6,20 @@ using namespace std;
 #define mp make_pair
 void solve(){
 	ll n,i;
-	cin>>n;
-	vector<ll>a(n);
+	string s;
+	cin>>n>>k;
+	cin>>s;
+	string ans[k] = {"\0"};
+	ll l = 0,r = s.length()-1;
+	char a,b;
+	while(l<=r){
+		if(a!=s[l] && b!=s[r]){
+			l++;
+		}
 
+		a = s[l];
+		b = s[b];
+	}
 }
 int main(){
 	ll t;

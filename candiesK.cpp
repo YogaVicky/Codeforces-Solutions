@@ -7,14 +7,16 @@ using namespace std;
 void solve(){
 	ll n,i;
 	cin>>n;
-	vector<ll>a(n);
-
+	ll k=2;
+	while(k++){
+		
+	}
 }
 int main(){
-	ll t;
+	fast.io;
 	cin>>t;
 	while(t--){
-		solve();
+		solve()
 	}
 	return 0;
 }

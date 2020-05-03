@@ -8,7 +8,18 @@ void solve(){
 	ll n,i;
 	cin>>n;
 	vector<ll>a(n);
-
+	for(i=0;i<n;i++){
+		cin>>a[i];
+	}
+	ll check = 1;
+	for(i=0;i<n-1;i++){
+		if(a[i+1]-a[i]>1)
+			check=0;
+	}
+	if(check)
+		cout<<"Yes"<<endl;
+	else
+		cout<<"No"<<endl;
 }
 int main(){
 	ll t;

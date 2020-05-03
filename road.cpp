@@ -5,10 +5,12 @@ using namespace std;
 #define mod 1000000007
 #define mp make_pair
 void solve(){
-	ll n,i;
-	cin>>n;
-	vector<ll>a(n);
-
+	ll n,i,x,y,a,b;
+	cin>>x>>y>>a>>b;
+	ll res = 0;
+	res = abs(y-x)*a;
+	res+=min(min(y,x)*b,min(x,y)*a*2);
+	cout<<res<<endl; 
 }
 int main(){
 	ll t;

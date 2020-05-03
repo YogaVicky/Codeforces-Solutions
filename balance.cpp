@@ -7,12 +7,19 @@ using namespace std;
 void solve(){
 	ll n,i;
 	cin>>n;
-	vector<ll>a(n);
-
+	n = n/2;
+	ll sum = 0;
+	ll s = 1;
+	while(n--){
+		sum+=pow(2,s);
+		s++;
+	}
+	cout<<sum<<endl;
 }
 int main(){
-	ll t;
+	ll t,j;
 	cin>>t;
+	for(j=0;j<10;j++);
 	while(t--){
 		solve();
 	}

@@ -3,10 +3,12 @@ using namespace std;
 #define ll long long int
 #define pb push_back
 int main(){
-	ll i;
-	for(i=100;i<=200;i++){
-		if((i%7)%10 == (i%10)%7)
-			cout<<i<<endl;
+	ll t;
+	cin>>t;
+	while(t--){
+		ll n,x,y;
+		cin>>n>>x>>y;
+		
 	}
 	return 0;
 }
