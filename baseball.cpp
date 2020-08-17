@@ -10,6 +10,20 @@ void solve(){
 	vector<ll>a(n);
 	for(i=0;i<n;i++)
 		cin>>a[i];
+	vector<ll>b(n);
+	for(i=0;i<n;i++){
+		if(a[i]==i+1)
+			b[i]=1;
+		else
+			b[i]=0;
+	}
+	for(i=0;i<n;i++)
+		cout<<b[i]<<" ";
+	for(i=0;i<n;i++){
+		
+	}
+	cout<<endl;
+
 }
 int main(){
 	ll t;

@@ -5,11 +5,15 @@ using namespace std;
 #define mod 1000000007
 #define mp make_pair
 void solve(){
-	ll n,i;
-	cin>>n;
-	vector<ll>a(n);
-	for(i=0;i<n;i++)
-		cin>>a[i];
+	ll n,i,m;
+	cin>>n>>m;
+	ll a,b;
+	a=max(n,m);
+	b=min(n,m);
+		if(a<2*b)
+			cout<<pow(2*b,2)<<endl;
+		else
+			cout<<pow(a,2)<<endl;	
 }
 int main(){
 	ll t;

@@ -5,7 +5,7 @@ using namespace std;
 #define mod 1000000007
 #define mp make_pair
 void solve(){
-	ll n,i;
+	ll n,i,j,k;
 	cin>>n;
 	vector<ll>a(n);
 	for(i=0;i<n;i++)

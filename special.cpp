@@ -47,8 +47,6 @@ void solve(){
 	ll check = 0,count1=0,j,k;
 	ll c;
 	sort(a.begin(),a.end());
-	// map<ll,ll>m;
-
 	for(j=2;j<n+1;j++){
 		for(k=0;k<j-1;k++){
 			c = b[j]-b[k];
@@ -56,25 +54,14 @@ void solve(){
 				d[c]=1;
 		}
 	}
-	// for(i=1;i<=n;i++)
-	// 	cout<<d[i]<<" ";
-	// cout<<endl;
 	for(i=0;i<n;i++){
 		if(d[a[i]])
 			d[a[i]]++;
 	}
-	// for(i=1;i<=n;i++)
-	// 	cout<<d[i]<<" ";
-	// cout<<endl;
 	for(i=1;i<=n;i++){
 		if(d[i])
 			count1+=d[i]-1;
 	}
-	// sort(c.begin(),c.end());
-	// for(i=0;i<n;i++){
-	// 	if(binary_search(c.begin(),c.end(),a[i]))
-	// 		count++;
-	// }
 	cout<<count1<<endl;
 }
 int main(){

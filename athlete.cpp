@@ -10,6 +10,12 @@ void solve(){
 	vector<ll>a(n);
 	for(i=0;i<n;i++)
 		cin>>a[i];
+	sort(a.begin(),a.end());
+	ll m = INT_MAX;
+	for(i=1;i<n;i++){
+		m = min(m,a[i]-a[i-1]);
+	}
+	cout<<m<<endl;
 }
 int main(){
 	ll t;

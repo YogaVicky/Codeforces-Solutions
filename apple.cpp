@@ -1,4 +1,3 @@
-
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long int
@@ -6,16 +5,19 @@ using namespace std;
 #define mod 1000000007
 #define mp make_pair
 void solve(){
-	ll n,i,j,k;
+	ll n1,n,i,j,k;
 	cin>>n;
+	cin>>n1;
 	vector<ll>a(n);
 	for(i=0;i<n;i++)
 		cin>>a[i];
+		cin>>n1;
+		cout<<1+n1/2<<endl;
 }
 int main(){
 	ll n;
 	cin >> n;
-	ll a[n];
+	vector<ll>a(n);
 	map<ll, ll> m;
 	ll r = 0;
 	ll x = 0;
@@ -79,9 +81,9 @@ int main(){
 			m[y]--;
 		}
 		if (r >= 4 && sq >= 1)
-			cout << "YES\n";
+			cout<<"YES"<<endl;
 		else
-			cout << "NO\n";
+			cout <<"NO"<<endl;
 	}
 	return 0;
 }

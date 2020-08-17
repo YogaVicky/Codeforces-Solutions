@@ -7,9 +7,13 @@ using namespace std;
 void solve(){
 	ll n,i;
 	cin>>n;
-	vector<ll>a(n);
 	for(i=0;i<n;i++)
-		cin>>a[i];
+		cout<<i+1<<" ";
+	cout<<endl;
+	// vector<ll>a(n);
+	// for(i=0;i<n;i++)
+	// 	cin>>a[i];
+	// for(i=0;i<)
 }
 int main(){
 	ll t;

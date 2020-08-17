@@ -10,6 +10,17 @@ void solve(){
 	vector<ll>a(n);
 	for(i=0;i<n;i++)
 		cin>>a[i];
+	ll count = 0;
+	for(i=0;i<n;i++){
+		if(a[i]==1)
+			count++;
+	}
+	ll sum = 0,count=0;
+	for(i=0;i<n;i++){
+		sum+=a[i];
+		count++;
+		if(sum==)
+	}
 }
 int main(){
 	ll t;
