@@ -5,23 +5,22 @@ using namespace std;
 #define mod 1000000007
 #define mp make_pair
 void solve(){
-	ll n,i,m,j;
-	cin>>n>>m;
-	ll a[n][m];
+	ll n,i;
+	cin>>n;
+	vector<ll>a(n);
+	for(i=0;i<n;i++)
+		cin>>a[i];
+	ll sum = 0,cost=0;
 	for(i=0;i<n;i++){
-		for(j=0;j<m;j++)
-			cin>>a[i][j];
+		if(a[i]<0 && a[i]*-1 > sum){
+			cost+=a[i]*-1 - sum;
+			sum = 0;
+		}
+		else{
+			sum+=a[i];
+		}
 	}
-	ll count = 0;
-	for(i=0;i<n;i++){
-		for(j=0;j<m;j++)
-			if(a[i][j]==0)
-				count++;
-	}
-	if(count%2==0)
-		cout<<"Vivek"<<endl;
-	else
-		cout<<"Ashish"<<endl;
+	cout<<cost<<endl;
 }
 int main(){
 	ll t;
