@@ -9,8 +9,23 @@ using namespace std;
 
 void solve(){
 	ll n,i,j,k,m;
-	cin>>n>>m;
-	vector<ll,ll>a(n);
+	cin>>n;
+	string s;
+	cin>>s;
+	n = s.length();
+	// vector<ll>a(n);
+	ll count=0;
+	for(i=n-1;i>=0;i--){
+		if(s[i]!=')'){
+			break;
+		}
+		else
+			count++;
+	}
+	if(count>n-count)
+		cout<<"YES"<<endl;
+	else
+		cout<<"NO"<<endl;
 }
 int main(){
 	ll t;

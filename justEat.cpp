@@ -7,20 +7,15 @@ int n;
 vector <int> a;
 
 bool solve(){
-    cin >> n;
-    a.resize(n);
-    for(auto &i : a) cin >> i;
-    ll sum = 0;
-    for(int i = 0 ; i < n ; i++){
-        sum += a[i];
-        if(sum <= 0) return 0;
+    ll n;
+    cin>>n;
+    vector<ll>a(n);
+    for(i=0;i<n;i++){
+        cin>>a[i];
     }
-    sum = 0;
-    for(int i = n - 1 ; i >= 0 ; i--){
-        sum += a[i];
-        if(sum <= 0) return 0;
+    for(i=0;i<n;i++){
+        cout<<a[i];
     }
-    return 1;
 }
 int main(){
     ios_base::sync_with_stdio(0);

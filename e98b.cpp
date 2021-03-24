@@ -8,9 +8,20 @@ using namespace std;
 // for(auto it = m.begin();it!=m.end();it++)
 
 void solve(){
-	ll n,i,j,k,m;
-	cin>>n>>m;
-	vector<ll,ll>a(n);
+	ll n,i,j;
+	cin>>n;
+	vector<ll>a(n);
+	ll m = INT_MIN;
+	ll sum = 0;
+	for(i=0;i<n;i++){
+		cin>>a[i];
+		sum+=a[i];
+		m = max(m,a[i]);
+	}
+	ll h = sum%(n-1)==0?sum/(n-1):sum/(n-1)+1;
+	m = max(m,h);
+	cout<<(n-1)*m-sum<<endl;
+
 }
 int main(){
 	ll t;

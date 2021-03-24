@@ -10,7 +10,17 @@ using namespace std;
 void solve(){
 	ll n,i,j,k,m;
 	cin>>n>>m;
-	vector<ll,ll>a(n);
+	if(n%2==0){
+		if(n%4==0){
+			cout<<n/4<<" "<<n/4<<" "<<n/2<<endl;
+		}
+		else{
+			cout<<2<<" "<<n/2-1<<" "<<n/2-1<<endl;
+		}
+	}
+	else{
+		cout<<1<<" "<<n/2<<" "<<n/2<<endl;
+	}
 }
 int main(){
 	ll t;

@@ -9,11 +9,17 @@ using namespace std;
 
 void solve(){
 	ll n,i,j,k,m;
-	cin>>n>>m;
-	vector<ll,ll>a(n);
+	cin>>n;
+	if(n%2020 <= n/2020)
+		cout<<"YES"<<endl;
+	else
+		cout<<"NO"<<endl;
 }
 int main(){
-	ll t;
+	ll t,i;
+	for(i=0;i<10000;i++);
+		for(i=0;i<10000;i++);
+			for(i=0;i<10000;i++);
 	cin>>t;
 	while(t--){
 		solve();

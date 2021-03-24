@@ -4,13 +4,12 @@ using namespace std;
 #define pb push_back
 #define mod 1000000007
 #define mp make_pair
-// for(i=0;i<n;i++)
-// for(auto it = m.begin();it!=m.end();it++)
-
 void solve(){
-	ll n,i,j,k,m;
-	cin>>n>>m;
-	vector<ll,ll>a(n);
+	ll n,i;
+	ll a,b,c,d;
+	cin>>a>>b>>c>>d;
+	if(a==c || b==d)cout<<abs(a-c)+abs(b-d)<<endl;
+	else cout<<abs(a-c)+abs(b-d)+2<<endl;
 }
 int main(){
 	ll t;

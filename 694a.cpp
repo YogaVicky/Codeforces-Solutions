@@ -10,7 +10,22 @@ using namespace std;
 void solve(){
 	ll n,i,j,k,m;
 	cin>>n>>m;
-	vector<ll,ll>a(n);
+	vector<ll>a(n);
+	ll count=0;
+	ll sum =0;
+	for(i=0;i<n;i++){
+		cin>>a[i];
+		sum+=a[i];
+		if(a[i]%m==0)
+			count+=a[i]/m;
+		else
+			count+=a[i]/m+1;
+	}
+	if(sum%m==0)
+		cout<<sum/m<<" ";
+	else
+		cout<<sum/m + 1<<" ";
+	cout<<count<<endl;
 }
 int main(){
 	ll t;

@@ -4,17 +4,16 @@ using namespace std;
 #define pb push_back
 #define mod 1000000007
 #define mp make_pair
-// for(i=0;i<n;i++)
-// for(auto it = m.begin();it!=m.end();it++)
-
 void solve(){
-	ll n,i,j,k,m;
-	cin>>n>>m;
-	vector<ll,ll>a(n);
+	ll n,i;
+	string s;
+	cin>>s;
+	n = s.length();
+	cout<<3<<endl<<"L 2 "<<endl<<"R 2 "<<endl<<"R "<<2*n-1<<endl; 
 }
 int main(){
-	ll t;
-	cin>>t;
+	ll t=1;
+	// cin>>t;
 	while(t--){
 		solve();
 	}

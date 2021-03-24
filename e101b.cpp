@@ -9,11 +9,29 @@ using namespace std;
 
 void solve(){
 	ll n,i,j,k,m;
-	cin>>n>>m;
-	vector<ll,ll>a(n);
+	cin>>n;
+	vector<ll>a(n);
+	for(i=0;i<n;i++){
+		cin>>a[i];
+	}
+	cin>>m;
+	vector<ll>b(m);
+	for(i=0;i<m;i++){
+		cin>>b[i];
+	}
+	ll s1=0,m1=0,s2=0,m2=0;
+	for(i=0;i<n;i++){
+		s1+=a[i];
+		m1=max(s1,m1);
+	}
+	for(i=0;i<m;i++){
+		s2+=b[i];
+		m2=max(s2,m2);
+	}
+	cout<<m1+m2<<endl;
 }
 int main(){
-	ll t;
+	ll t,i;
 	cin>>t;
 	while(t--){
 		solve();

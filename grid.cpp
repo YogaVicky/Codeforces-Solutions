@@ -9,8 +9,15 @@ using namespace std;
 
 void solve(){
 	ll n,i,j,k,m;
-	cin>>n>>m;
-	vector<ll,ll>a(n);
+	ll u,v;
+	cin>>n>>u>>v;
+	vector<ll>a(n);
+	for(i=0;i<n;i++){
+		cin>>a[i];
+	}
+	for(i=1;i<n;i++){
+		if(a[i]==a[i-1])
+	}
 }
 int main(){
 	ll t;

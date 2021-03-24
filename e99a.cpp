@@ -9,8 +9,9 @@ using namespace std;
 
 void solve(){
 	ll n,i,j,k,m;
-	cin>>n>>m;
-	vector<ll,ll>a(n);
+	string s;
+	cin>>s;
+	cout<<s.length()<<endl;
 }
 int main(){
 	ll t;

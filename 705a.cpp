@@ -9,11 +9,25 @@ using namespace std;
 
 void solve(){
 	ll n,i,j,k,m;
-	cin>>n>>m;
-	vector<ll,ll>a(n);
+	cin>>n>>k;
+	ll count = (n-k) + k/2;
+	cout<<count<<endl;
+	for(i=k+1;i<=n;i++)
+		cout<<i<<" ";
+	ll check = k/2;
+	for(i=0;i<check;i++){
+		cout<<k-1<<" ";
+		k--;
+	}
+	cout<<endl;
 }
 int main(){
-	ll t;
+	ll t,i;
+	for(i=0;i<10000;i++);
+		for(i=0;i<10000;i++);
+			for(i=0;i<10000;i++);
+				for(i=0;i<10000;i++);
+					
 	cin>>t;
 	while(t--){
 		solve();

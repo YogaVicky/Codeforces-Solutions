@@ -8,9 +8,13 @@ using namespace std;
 // for(auto it = m.begin();it!=m.end();it++)
 
 void solve(){
-	ll n,i,j,k,m;
-	cin>>n>>m;
-	vector<ll,ll>a(n);
+	ll n,i,j,m;
+	cin>>n;
+	cout<<n<<endl;
+	for(i=0;i<n;i++){
+		cout<<i+1<<" ";
+	}
+	cout<<endl;
 }
 int main(){
 	ll t;

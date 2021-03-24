@@ -8,9 +8,25 @@ using namespace std;
 // for(auto it = m.begin();it!=m.end();it++)
 
 void solve(){
-	ll n,i,j,k,m;
-	cin>>n>>m;
-	vector<ll,ll>a(n);
+	ll n,i,j,k;
+	cin>>n;
+	ll count = 0;
+	vector<ll>a(n);
+	map<ll,ll>m;
+	for(i=0;i<n;i++){
+		cin>>a[i];
+	}
+	for(i=0;i<n;i++){
+		if(m[a[i]]>0){
+			a[i]++;
+			m[a[i]]++;
+		}
+		else
+			m[a[i]]++;	
+	}
+	for(auto it = m.begin();it!=m.end();it++)
+		count++;	
+	cout<<count<<endl;
 }
 int main(){
 	ll t;

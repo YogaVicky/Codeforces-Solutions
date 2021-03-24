@@ -9,8 +9,25 @@ using namespace std;
 
 void solve(){
 	ll n,i,j,k,m;
-	cin>>n>>m;
-	vector<ll,ll>a(n);
+	cin>>n;
+	vector<ll>a(n);
+	for(i=0;i<n;i++){
+		cin>>a[i];
+	}
+	// for(i=0;i<n;i++){
+	// 	cout<<a[i]<<" ";
+	// }
+	// cout<<endl;
+	ll l=0,r=n-1;
+	while(l!=r && l<r){
+		cout<<a[l]<<" "<<a[r]<<" ";
+		l++;
+		r--;
+	}
+	if(l==r){
+		cout<<a[l]<<" ";
+	}
+	cout<<endl;
 }
 int main(){
 	ll t;

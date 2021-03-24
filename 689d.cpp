@@ -10,7 +10,15 @@ using namespace std;
 void solve(){
 	ll n,i,j,k,m;
 	cin>>n>>m;
-	vector<ll,ll>a(n);
+	vector<ll>a(n);
+	for(i=0;i<n;i++){
+		cin>>a[i];
+	}
+	while(m--){
+		ll b;
+		cin>>b;
+		
+	}
 }
 int main(){
 	ll t;

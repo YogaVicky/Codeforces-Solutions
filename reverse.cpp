@@ -4,13 +4,19 @@ using namespace std;
 #define pb push_back
 #define mod 1000000007
 #define mp make_pair
-// for(i=0;i<n;i++)
-// for(auto it = m.begin();it!=m.end();it++)
-
 void solve(){
-	ll n,i,j,k,m;
-	cin>>n>>m;
-	vector<ll,ll>a(n);
+	ll n,i,j;
+	cin>>n;
+	string s;
+	cin>>s;
+	ll sum1=0,sum2=0;
+	for(i=0;i<n-1;i++){
+		if(s[i]=='1' && s[i+1]=='1')
+			sum1++;
+		if(s[i]=='0' && s[i+1]=='0')
+			sum2++;
+	}
+	cout<<max(sum1,sum2)<<endl;
 }
 int main(){
 	ll t;

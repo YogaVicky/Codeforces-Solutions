@@ -9,8 +9,16 @@ using namespace std;
 
 void solve(){
 	ll n,i,j,k,m;
-	cin>>n>>m;
-	vector<ll,ll>a(n);
+	cin>>n>>k;
+	string s;
+	cin>>s;
+	if(n%k!=0){
+		cout<<-1<<endl;
+		return;
+	}
+	for(i=0;i<n;i++){
+		
+	}
 }
 int main(){
 	ll t;

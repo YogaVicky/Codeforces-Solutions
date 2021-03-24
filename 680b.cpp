@@ -8,10 +8,15 @@ using namespace std;
 // for(auto it = m.begin();it!=m.end();it++)
 
 void solve(){
-	ll n,i,j,k,m;
-	cin>>n>>m;
-	vector<ll,ll>a(n);
+	ll n,i,j,k;
+	ll a,b,c,d;
+	cin>>a>>b>>c>>d;
+	vector<ll>a(n);
+	for(i=0;i<n;i++){
+		cin>>a[i];
+	}
 }
+
 int main(){
 	ll t;
 	cin>>t;

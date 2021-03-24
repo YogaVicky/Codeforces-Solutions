@@ -4,13 +4,13 @@ using namespace std;
 #define pb push_back
 #define mod 1000000007
 #define mp make_pair
-// for(i=0;i<n;i++)
-// for(auto it = m.begin();it!=m.end();it++)
-
 void solve(){
-	ll n,i,j,k,m;
-	cin>>n>>m;
-	vector<ll,ll>a(n);
+	ll n,i;
+	cin>>n;
+	ll a = sqrt(n);
+	ll ans = 2*(a-1);
+	ans+=(n-(a*a))%a==0?(n-(a*a))/a:(n-(a*a))/a+1;
+	cout<<ans<<endl;
 }
 int main(){
 	ll t;

@@ -9,8 +9,10 @@ using namespace std;
 
 void solve(){
 	ll n,i,j,k,m;
-	cin>>n>>m;
-	vector<ll,ll>a(n);
+    ll a,b,c,d;
+	cin>>a>>b>>c>>d;
+    cout<<max(max(abs(d-1) + abs(c-1) , abs(c-1) + abs(d-b)) , max(abs(d-b) + abs(c-a) , abs(c-a) + abs(d-1)));
+    cout<<endl;
 }
 int main(){
 	ll t;

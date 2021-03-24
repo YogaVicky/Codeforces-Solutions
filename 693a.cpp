@@ -9,11 +9,28 @@ using namespace std;
 
 void solve(){
 	ll n,i,j,k,m;
-	cin>>n>>m;
-	vector<ll,ll>a(n);
+	ll a,b,c;
+	cin>>a>>b>>c;
+	ll co1 = 1,co2=1;
+	while(a%2==0){
+		a/=2;
+		co1*=2;
+	}
+	while(b%2==0){
+		b/=2;
+		co2*=2;
+	}
+	if(co1*co2>=c)
+		cout<<"YES"<<endl;
+	else
+		cout<<"NO"<<endl;
 }
 int main(){
-	ll t;
+	ll t,i;
+	for(i=0;i<100000;i++);
+		for(i=0;i<100000;i++);
+			for(i=0;i<100000;i++);
+				
 	cin>>t;
 	while(t--){
 		solve();

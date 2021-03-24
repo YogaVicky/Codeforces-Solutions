@@ -10,11 +10,31 @@ using namespace std;
 void solve(){
 	ll n,i,j,k,m;
 	cin>>n>>m;
-	vector<ll,ll>a(n);
+	for(i=0;i<m;i++){
+		cout<<'a';
+	}
+	ll check=0;
+	for(i=m;i<n;i++){
+		if(check==1){
+			cout<<'a';
+			check=0;
+		}
+		else if(check==0){
+			cout<<'b';
+			check=3;	
+		}
+		else{
+			cout<<'c';
+			check=1;	
+		}
+	}	
+	cout<<endl;
 }
 int main(){
 	ll t;
 	cin>>t;
+	
+
 	while(t--){
 		solve();
 	}

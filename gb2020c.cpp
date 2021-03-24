@@ -9,8 +9,24 @@ using namespace std;
 
 void solve(){
 	ll n,i,j,k,m;
-	cin>>n>>m;
-	vector<ll,ll>a(n);
+	string s;
+	cin>>s;
+	n = s.length();
+	ll a[n]={0};
+	ll count=0;
+	for(i=1;i<n;i++){
+		if(s[i]==s[i-1] && a[i-1]!=1){
+			a[i]=1;
+		}
+		if(s[i]==s[i-2] && a[i-2]!=1 && i!=1){
+			a[i]=1;	
+		}
+	}
+	for(i=0;i<n;i++){
+		if(a[i])
+			count++;
+	}
+	cout<<count<<endl;
 }
 int main(){
 	ll t;
